@@ -1,3 +1,5 @@
+package org.example;
+
 public class DescuentoFijo extends Descuento {
 
     public DescuentoFijo(double porcentaje) {
@@ -10,7 +12,7 @@ public class DescuentoFijo extends Descuento {
     @Override
     public double calcularDescuento(double total) {
         if (total !=total-this.getPorcentaje()) {
-            return this.getPorcentaje();
+            return total-this.getPorcentaje();
         } else {
             return 0;
         }

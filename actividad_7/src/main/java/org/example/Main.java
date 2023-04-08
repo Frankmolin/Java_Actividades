@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -5,11 +7,10 @@ public class Main {
     public static void main(String[] args) {
         String nombreArchivo = "productos";
         Carrito carrito = new Carrito();
-        Descuento a= new DescuentoFijo(4);
-a.calcularDescuento(40);
+
         try {
             FileReader fr = new FileReader(nombreArchivo);
-             BufferedReader br = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(fr);
 
             String linea;
             while ((linea = br.readLine()) != null) {
@@ -17,7 +18,9 @@ a.calcularDescuento(40);
                 Producto producto = new Producto(datos[2], Integer.parseInt(datos[1]));
                 carrito.agregarItem(new ItemCarrito(producto, Integer.parseInt(datos[0])));
             }
-System.out.println(carrito.calcularTotal());
+            carrito.setDescuento(new DescuentoPorcentajeConTope(50, 100)
+                    .calcularDescuento(carrito.calcularTotal()));
+            System.out.println(carrito.calcularTotal());
 
             br.close();
             fr.close();
