@@ -1,0 +1,6 @@
+Partido_id,Fase_nro,Ronda_nro,Equipo_1_id,Equipo_1_nombre,Equipo_1_descripcion,Equipo_1_cantidad_goles,Equipo_2_cantidad_goles,Equipo_2_id,Equipo_2_nombre,Equipo_2_descripcion
+0,1,1,1,Argentina,Seleccionado,1,2,2,"Arabia Saudita",Seleccionado
+1,1,1,3,Polonia,Seleccionado,0,0,4,México,Seleccionado
+2,1,1,1,Argentina,Seleccionado,2,0,4,México,Seleccionado
+3,1,1,2,"Arabia Saudita",Seleccionado,0,2,3,Polonia,Seleccionado
+4,1,2,3,Polonia,Seleccionado,0,3,1,Argentina,Seleccionado
