@@ -18,6 +18,7 @@ public class Main {
             if (p.empate.equals("X")) {
                 if (r.equipo1_goles == r.equipo2_goles) puntaje++;
                 continue;
+
             }
             if (p.equipo1_gana.equals("X")) {
                 if (r.equipo1_goles > r.equipo2_goles) puntaje++;
